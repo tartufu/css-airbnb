@@ -1,3 +1,55 @@
-h1 {
-  color: salmon;
+body {
+  background-color: rgb(232, 235, 231 );
+  text-align: center; /* everything is centered */
+  color: rgb(69, 72, 74);
+}
+
+.header p {
+  margin-top: -20px; /* makes the p shift up so it looks closer to the mockup */
+}
+
+.image-gallery img {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  width: 20%;
+  padding: 10px;
+}
+
+.image-card p {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: -170px;
+  margin-left: 20px;
+  padding-bottom: 110px;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 0 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.button:hover {
+  background-color: salmon;
+}
+
+@media (max-width: 1000px) {
+  .image-gallery {
+    display: inline-block;
+  }
 }
